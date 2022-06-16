@@ -3,7 +3,9 @@ import { useCookies } from 'react-cookie';
 import AuthContext from './auth-context';
 
 const AuthProvider = (props) => {
+  // ======================= USE OF SET COOKIE =======================
   const [cookies, setCookie, removeCookie] = useCookies(['auth_token']);
+  // ==================================================================
   const [currentUser, setCurrentUser] = useState({});
   const [loadingUserInfo, setLoadingUserInfo] = useState(true);
 

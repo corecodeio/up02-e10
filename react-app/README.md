@@ -5,8 +5,9 @@
 Inside the [auth provider file](./src/context/AuthProvider.js) you will find the changes to add to be able to set the token manually
 
 ```javascript
-// use set cookie function
+// ======================= USE OF SET COOKIE =======================
 const [cookies, setCookie, removeCookie] = useCookies(['auth_token']);
+// ==================================================================
 ```
 
 ```javascript
